@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The who command for network information.",
   "main": "index.js",
-  "repository": "matthewrogers.org",
+  "repository": "ramborogers",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
