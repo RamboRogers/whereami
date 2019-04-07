@@ -18,6 +18,9 @@ const find = require('local-devices');
 var network = require('network');
 var colors = require('colors');
 
+//fetch DB for macs
+oui.update();
+
 console.log("Where Am I?\n");
 console.log(" -- Attempting to Fetch IP Information --")
 
@@ -51,13 +54,10 @@ network.get_public_ip(function(err, ip) {
 
                     //Address problem/missing MAC decode
                     var vendor="UNKNOWN";
-                    try {
-                      if(oui(devices[device].mac) !== NULL){
+                    if(oui(devices[device].mac)){
                         vendor = oui(devices[device].mac).split('\n')[0];
-                      }
-                    } catch {
-
                     }
+                   
 
                     var output = "IP:" + "->" + devices[device].ip + " MAC->" + devices[device].mac + "   DNS->" + devices[device].name + "  VENDOR->" + vendor;
 
