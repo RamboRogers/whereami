@@ -19,7 +19,7 @@ var network = require('network');
 var colors = require('colors');
 
 //fetch DB for macs
-oui.update();
+//oui.update();
 
 console.log("Where Am I?\n");
 console.log(" -- Attempting to Fetch IP Information --")
