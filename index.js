@@ -48,7 +48,7 @@ network.get_public_ip(function(err, ip) {
                       devices[device].ip += " ";
                     }
                     //PAD DNS
-                    while(devices[device].name.length < 40){
+                    while(devices[device].name.length < 10){
                       devices[device].name += " ";
                     }
 
@@ -59,7 +59,7 @@ network.get_public_ip(function(err, ip) {
                     }
                    
 
-                    var output = "IP:" + "->" + devices[device].ip + " MAC->" + devices[device].mac + "   DNS->" + devices[device].name + "  VENDOR->" + vendor;
+                    var output = "IP:" + "->" + devices[device].ip + " MAC->" + devices[device].mac + "  VENDOR->" + vendor;
 
                     if(counter % 2 === 0){
                       console.log(output);
