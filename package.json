@@ -17,7 +17,7 @@
     "colors": "^1.3.3",
     "local-devices": "git+https://github.com/DylanPiercey/local-devices.git#fix/max-buffer",
     "network": "^0.4.1",
-    "oui": "^9.1.9"
+    "oui": "^12.0.42"
   },
   "devDependencies": {
     "typescript": "^3.4.2"
